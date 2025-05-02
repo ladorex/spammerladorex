@@ -14,7 +14,7 @@ def load_user_agents():
         print(Colorate.Color(Colors.red, "[!] Hata: data/Agent.txt dosyası bulunamadı!"))
         sys.exit(1)
 
-    with open("data/Agent.txt", "r", encoding="utf-8") as file:
+    with open("data/agent.txt", "r", encoding="utf-8") as file:
         agents = [line.strip() for line in file.readlines() if line.strip()]
     
     if not agents:
