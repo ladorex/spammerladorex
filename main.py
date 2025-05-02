@@ -10,7 +10,7 @@ import uuid
 
 def load_user_agents():
     """Agent.txt dosyasından User-Agent'ları yükler"""
-    if not os.path.exists("data/Agent.txt"):  # Burada dosyanın data klasöründe olmasına dikkat et
+    if not os.path.exists("data/agent.txt"):  # Burada dosyanın data klasöründe olmasına dikkat et
         print(Colorate.Color(Colors.red, "[!] Hata: data/Agent.txt dosyası bulunamadı!"))
         sys.exit(1)
 
